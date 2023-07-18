@@ -7,57 +7,109 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- Bootstrap CSS v4.6.0 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css"
+    integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
 
-    <!-- External Css -->
-    <link rel="stylesheet" href="./style.css">
+  <!-- External Css -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!--start header codes-->
-    <header id="header_id">
-        <div class="text-white">
-          <div class="container text-center">
-              <p-5 class="text-uppercase display-4">Vergi Hesaplama</p-5>
+  <!--start header codes-->
+  <header id="header_id">
+    <div class="text-white">
+      <div class="container text-center">
+        <p-5 class="display-4">VERGİ HESAPLAMA</p-5>
+      </div>
+    </div>
+  </header>
+  <!--end header codes-->
+
+  <!-- start main codes -->
+  <main id="main_id">
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <h4>Vergi Oranını Seçiniz..</h4>
+          </div>
+          <div class="col-6"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-outline-warning">%1</button>
+            <button type="button" class="btn btn-outline-warning">%8</button>
+            <button type="button" class="btn btn-outline-warning">%18</button>
+            <button type="button" class="btn btn-outline-warning">Yüzde Gir</button>
           </div>
         </div>
-
-    </header>
-    <!--end header codes-->
-
-    <!-- start main codes -->
-    <main id="main_id">
-        <section id="butandvergi_id">
-            <div class="container">
-                <div class="row">
-                    <h3>Vergi Oranını Seçiniz</h3>
-                    <div class="col-12 col-sm-3 col-xl-3"><button type="button" class="btn btn-outline-warning">%1</button></div>
-                    <div class="col-12 col-sm-3 col-xl-3"><button type="button" class="btn btn-outline-warning">%8</button></div>
-                    <div class="col-12 col-sm-3 col-xl-3"><button type="button" class="btn btn-outline-warning">%18</button></div>
-                    <div class="col-12 col-sm-3 col-xl-3"><button type="button" class="btn btn-outline-warning">Yüzde Gir</button></div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-6 col-xl-3">Vergi Oranı :</div>
-                    <div class="col-12 col-sm-6 col-xl-3"></div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <!-- end main codes -->
+      </div>
+      <div class="container mb-3">
+        <div class="row mt-4">
+          <div class="col-6" style="color:#828181">
+            <h5>Vergi Oranı :</h5>
+          </div>
+          <div class="col-6"></div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-6" style="color:#828181; padding-left: 67px;">
+            <h5>Tutar :</h5>
+            <div class="col-6"></div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-xl-6">
+            <button type="button" class="btn btn-outline-info" style="width: 40rem">Vergi Dahil</button>
+          </div>
+          <div class="col-xl-6">
+            <button type="button" class="btn btn-outline-info" style="width: 40rem">Vergi Hariç</button>
+          </div>
+        </div>
+      </div>
+      <div class="container mb-2" style="height:15rem; background-color: rgb(33, 186, 130); color: #fff; font-size: large;">
+        <div class="row pt-3"></div>
+        <div class="row pt-3">
+          <div class="col-3">Ara Toplam:</div>
+          <div class="col-3"></div>
+          <div class="col-3"></div>
+          <div class="col-3">₺0,00</div>
+        </div>
+        <div class="row pt-3"></div>
+        <div class="row pt-3">
+          <div class="col-3">Vergi:</div>
+          <div class="col-3"></div>
+          <div class="col-3"></div>
+          <div class="col-3">₺0,00</div>
+        </div>
+        <div class="row pt-3"></div>
+        <div class="row pt-3">
+          <div class="col-3">Genel Toplam:</div>
+          <div class="col-3"></div>
+          <div class="col-3"></div>
+          <div class="col-3">₺0,00</div>
+        </div>
+        <div class="row"></div>
+      </div>
+    </section>
+  </main>
+  <!-- end main codes -->
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
+    </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
+    </script>
 
   <!-- External JS -->
   <script src="./template.js"></script>

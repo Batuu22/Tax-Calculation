@@ -4,24 +4,13 @@ header{
     margin-bottom: 20px;
 }
 
-#butandvergi_id button{
-    width: 20.5rem;
+#main_id h4{
+    color: #828181;
 }
 
-#vergiOrani_id #birinci_div{
-    
+#main_id section button{
+    width: 20rem;
 }
 
-#vergiOrani_id #ikinci_div{
-    
-}
-
-#vergiOrani_id #ucuncu_div{
-    border: 1px solid #00f;
-}
-
-#vergiOrani_id #dorduncu_div{
-    border: 1px solid rgb(107, 51, 203);
-}
 
 
