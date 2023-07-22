@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
+  <title>Vergi Hesapla</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -45,10 +45,10 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <button type="button" class="btn btn-outline-warning hover:text-white">%1</button>
-            <button type="button" class="btn btn-outline-warning">%8</button>
-            <button type="button" class="btn btn-outline-warning">%18</button>
-            <button type="button" class="btn btn-outline-warning">Yüzde Gir</button>
+            <button type="button" class="btn btn-outline-warning" id="rate1_id">%1</button>
+            <button type="button" class="btn btn-outline-warning" id="rate8_id">%8</button>
+            <button type="button" class="btn btn-outline-warning" id="rate18_id">%18</button>
+            <button type="button" class="btn btn-outline-warning" id="rate_yuzdeGir">Yüzde Gir</button>
           </div>
         </div>
       </div>
@@ -58,13 +58,12 @@
             <h5>Vergi Oranı :</h5>
           </div>
           <div class="col-6">
+
             <!-- Tax Rate input -->
-            <form>
               <div class="form-outline mb-4">
-                <input type="text" id="form4Example1" class="form-control" />
-                <label class="form-label" for="form4Example1"></label>
+                <input type="text" id="taxRate_id" class="form-control"/>
               </div>
-            </form>
+
           </div>
         </div>
         <div class="row mt-3">
@@ -72,21 +71,20 @@
             <h5>Tutar :</h5>
           </div>
           <div class="col-6">
-            <form>
+
               <!-- Total input -->
               <div class="form-outline mb-4">
-                <input type="text" id="form4Example1" class="form-control" />
-                <label class="form-label" for="form4Example1"></label>
+                <input type="text" id="total_id" class="form-control" />
               </div>
-            </form>
+  
           </div>
         </div>
         <div class="row mt-3">
           <div class="col-xl-6">
-            <button type="button" class="btn btn-outline-info" style="width: 30rem;">Vergi Dahil</button>
+            <button type="button" class="btn btn-outline-info" style="width: 30rem;" id="vergiDahil_id">Vergi Dahil</button>
           </div>
           <div class="col-xl-6">
-            <button type="button" class="btn btn-outline-info" style="width: 30rem;">Vergi Hariç</button>
+            <button type="button" class="btn btn-outline-info" style="width: 30rem;" id="vergiHaric_id">Vergi Hariç</button>
           </div>
         </div>
       </div>
@@ -97,23 +95,30 @@
           <div class="col-3">Ara Toplam:</div>
           <div class="col-3"></div>
           <div class="col-3"></div>
-          <div class="col-3">₺0,00</div>
+          <div class="col-3" id="araToplam_id">₺0,00</div>
         </div>
         <div class="row pt-3"></div>
         <div class="row pt-3">
           <div class="col-3">Vergi:</div>
           <div class="col-3"></div>
           <div class="col-3"></div>
-          <div class="col-3">₺0,00</div>
+          <div class="col-3" id="vergi_id">₺0,00</div>
         </div>
         <div class="row pt-3"></div>
         <div class="row pt-3">
           <div class="col-3">Genel Toplam:</div>
           <div class="col-3"></div>
           <div class="col-3"></div>
-          <div class="col-3">₺0,00</div>
+          <div class="col-3" id="genelToplam_id">₺0,00</div>
         </div>
         <div class="row"></div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-outline-info my-2" style="width: 30rem;  ;" id="sifirla_id">Sıfırla</button>
+          </div>
+        </div>
       </div>
     </section>
   </main>
